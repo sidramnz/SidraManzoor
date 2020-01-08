@@ -1,0 +1,476 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  height: 100%;
+}
+
+body {
+  margin-right: 60px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  margin-left: 80px;
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: lighter !important;
+}
+
+
+h3{
+  margin-bottom: 0;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.subnav{
+  padding-left: 16px
+}
+
+.active{
+  color: black !important;
+}
+
+
+.navigation li{
+  list-style: none;
+}
+
+.projectinfo li{
+  line-height: 1.75rem;
+  font-weight: lighter !important;
+
+}
+
+.logo{
+  float: left;
+  display: inline-block;
+  padding-right: 6px;
+  width: 20%;
+}
+
+.titlename h1{
+  width: 80%;
+  color: black;
+  font-weight: lighter !important;
+}
+
+
+@keyframes fadein {
+ from {opacity: 0;}
+ to {opacity: 1;}
+}
+
+@keyframes fadeinright {
+   0% {
+      opacity: 0;
+      transform: translateX(20px);
+   }
+   100% {
+      opacity: 1;
+      transform: translateX(0);
+   }
+}
+
+
+.titlename{
+  animation-name: fadeinright;
+  animation-duration: 5s;
+}
+
+
+.content {
+  position: relative;
+  display: block;
+  margin-left: 200px;
+  padding-left: 140px;
+  padding-right: 80px;
+
+}
+
+.content-box{
+  width: 100%;
+  height: auto;
+}
+
+.imgbox {
+  width: 65%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.centerimg{
+      text-align: center;
+      padding-left: 50px;
+      padding-right: 50px;
+    }
+
+.longimg{
+      text-align: center;
+      padding-left: 20%;
+      padding-right: 20%;
+}
+
+
+.content-box + .content-box{
+  margin-top: 40px;
+}
+
+.imgbox:hover {
+  opacity: 0.9;
+}
+
+.content-box:hover .projecttext{
+  display: inline-block;
+  animation-name: fadein;
+  animation-duration: 1s;
+}
+
+
+.projecttext {
+  position: relative;
+  display: none;
+  vertical-align: middle;
+  font-size: 1.2vw;
+  width: 30%;
+  margin-left: 3%;
+  vertical-align: middle;
+}
+
+.projecttext h5{
+  margin: 2px;
+  color: gray;
+}
+
+.projecttext p{
+  color: gray;
+}
+
+.projectvid {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+} 
+
+
+.projectvid iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.projectinfo p{
+  font-size: 1rem;
+line-height: 1.75rem;
+  font-weight: lighter;
+}
+
+.projectintro {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.introdescp {
+  float: left;
+  width: 50%;
+  max-width: 80%;
+  overflow: auto;
+}
+
+.introdescp p, h3{
+  width: 100%;
+}
+
+.introdetails{
+    margin-left: 55%;
+    overflow: auto;
+}
+
+.introdetails p{
+    max-width: 100%;
+    margin-top: 0; 
+    margin-bottom: 10px;
+}
+
+.introdetailsp1{
+  padding-top: 39.72px;
+}
+
+
+.aboutmedescp {
+  float: left;
+  width: 50%;
+  max-width: 80%;
+  overflow: auto;
+}
+
+.aboutmedescp p, h3{
+  width: 100%;
+}
+
+.aboutmedescp p{
+  font-size: 1rem;
+}
+
+.aboutmeimg{
+/*    margin-top: 20px;*/
+    margin-left: 55%;
+    overflow: auto;
+    width: 50%;
+    display: block;
+}
+
+.summary p, .techdev p, .story, .projectintro, .testing p{
+  max-width: 100%;
+}
+
+.storyline p, .storyline h3, .storyline ul{
+  clear: both;
+  float: left;
+
+}
+
+
+
+.story, .ideation, .summary{
+  clear: both;
+  float: left;
+
+/*  to have all divs in line. Add name of any main div to keep it in line*/
+}
+
+
+
+
+
+
+.projectimages{
+  margin-left: 55%;
+  max-width: 46%;
+  margin-top: 13.741px;
+}
+
+
+.development, .storyline, .testing {
+  clear: both;
+  overflow: auto;
+}
+
+.titles {
+  margin-left: 0;
+}
+
+.img1{
+    display: inline-block;
+    width: 40%; 
+}
+
+.img2{
+  width: 30%;
+  display: inline-block;
+}
+
+.img1 + .img1{
+  margin-left: 2%;
+}
+
+.img2 + .img2{
+  margin-left: 2%;
+}
+
+
+.navigation {
+  width: 200px;
+  display: inline-block;
+  float: left;
+  position: fixed;
+}
+
+.navtitles {
+  display: block;
+  color: gray;
+  text-align: left;
+  position: relative;
+  padding: 7px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.navsection{
+  margin-bottom: 10px;
+}
+
+.navigation a:hover {
+  color: black;
+}
+
+
+.navigation .icon {
+  display: none;
+  top: 34.74px;
+  right: 20px;  /*(change based on body margin)*/
+  padding: 0;
+  font-size: 22px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    body{ margin: 20px 20px 0px 20px;}
+
+    .content { 
+      width:100%; 
+      margin: 0; 
+      border:none; 
+      overflow: hidden; 
+      padding: 0;
+      display: inline-block;
+    }
+
+    .projectinfo p, .projectinfo h1{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        font-weight: lighter !important;
+    }
+
+    .imgbox{
+      width: 100%;
+    }
+
+    .img1, .img2{
+      display: block;
+      width: 100%;
+    }
+
+    .img1 + .img1, .img2 + .img2{
+      margin-left: 0;
+    }
+
+    .aboutmedescp{
+      display: block;
+      width: 100%;
+    }
+
+    .aboutmeimg{
+      display: block;
+      width: 100%;
+      margin-left: 0;
+    }
+
+    .projecttext {
+      width: 90%;
+      display: inline-block;
+      clear: both;  
+      overflow: auto; 
+      margin-bottom: 30px; 
+    }
+
+    .projecttext p{
+      margin-top: 4px;
+      margin-bottom: 4px;
+      width: 100%;
+      font-size: 12px;
+    }
+
+    .projecttext h3{
+      font-size: 14px;
+    }
+
+    .projecttext h5{
+      font-size: 10px;
+    }
+
+    #content1 {
+      padding-top: 10px;
+    }
+
+    .summary p, .development p, .testing p{
+      width: 100%;
+    }
+
+}
+
+/*////////////////////Navigation Media Queries/////////////////////*/
+
+@media screen and (max-width: 768px) {
+/*  .navigation a:not(:first-child) {display: none;}*/
+.navelements a{display: none;}
+  .navigation a.icon {
+    float: right;
+    display: block;
+  }
+
+  #navicon{
+    display: block;
+    position: absolute;
+    right: 4px;
+    top: 17px;
+    font-size: 22px;
+  }
+
+  #crossicon{
+    display: none;
+    position: absolute;
+    right: 4px;
+    top: 17px;
+    font-size: 22px;
+  }
+
+  .navigation {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  } 
+
+
+    .navigation h1{
+    display: block;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    font-size: 22px;
+  }
+
+  .logo{
+    width: 30px;
+    margin-bottom: 24.74px;
+  }
+
+  .navtitles {
+    display: block;
+    color: gray;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 12px;
+  }
+
+  .titlename{
+    margin-bottom: 24.74px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navigation.responsive {position: relative;}
+  .navigation.responsive .icon {
+  }
+  .navigation.responsive a{
+    float: none;
+    display: block;
+    text-align: left;
+  }
+
+}
